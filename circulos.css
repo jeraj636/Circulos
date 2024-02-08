@@ -1,0 +1,22 @@
+#igralec {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+#igra {
+    height: 100%;
+    width: 100%;
+}
+
+#krog {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(59, 59, 59);
+    position: absolute;
+    border-radius: 50%;
+
+}
