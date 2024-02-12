@@ -3,14 +3,14 @@ const igra = document.getElementById('igra');
 
 document.addEventListener("mousemove", premakni_igralca);
 
+let kaz_poz_x;
+let kaz_poz_y;
 function premakni_igralca(event) {
     igralec.style.top = event.clientY + 'px';
     igralec.style.left = event.clientX + 'px';
-    kaz_poz_x = event.clientX;
-    kaz_poz_y = event.clientY + 5;
+    kaz_poz_x = event.clientX - 10;
+    kaz_poz_y = event.clientY - 10;
 }
-let kaz_poz_x;
-let kaz_poz_y;
 const krogi = [];
 let krogi_num = 150;
 
@@ -62,7 +62,6 @@ function main() {
                 }
                 krogi[i].xpoz += krogi[i].hitrost * 2 * krogi[i].xsmer;
                 krogi[i].ypoz += krogi[i].hitrost * 2 * krogi[i].ysmer;
-
                 if (kaz_poz_x > krogi[i].xpoz - pol_vel && kaz_poz_x < krogi[i].xpoz + pol_vel && kaz_poz_y > krogi[i].ypoz - pol_vel && kaz_poz_y < krogi[i].ypoz + pol_vel) {
                     sem_ziv = false;
                     for (let i = 0; i < krogi_num; i++) {
