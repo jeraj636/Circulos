@@ -9,11 +9,11 @@
 #igra {
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
 }
 
 #krog {
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(110, 110, 110);
     position: absolute;
     border-radius: 50%;
 
