@@ -7,7 +7,7 @@ function premakni_igralca(event) {
     igralec.style.top = event.clientY + 'px';
     igralec.style.left = event.clientX + 'px';
     kaz_poz_x = event.clientX;
-    kaz_poz_y = event.clientY;
+    kaz_poz_y = event.clientY + 5;
 }
 let kaz_poz_x;
 let kaz_poz_y;
