@@ -1,3 +1,8 @@
+body {
+    /* popravil Gal <3 */
+    overflow: hidden;
+}
+
 #igralec {
     width: 10px;
     height: 10px;
